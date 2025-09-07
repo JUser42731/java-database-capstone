@@ -7,13 +7,18 @@ assignees: ''
 
 ---
 
-Title: As a [user role], I want [feature/goal], so that [reason].
+**As a [role],**
+**I want [an action or feature],**
+**So that [a reason or benefit].**
 
-Acceptance Criteria:
+**Acceptance Criteria:**
+- [ ] Criteria 1: Describe the first acceptance criterion here.
+- [ ] Criteria 2: Describe the second acceptance criterion here.
+- [ ] Criteria 3: Describe additional criteria as needed.
 
-[Criteria 1]
-[Criteria 2]
-[Criteria 3]
-Priority: [High/Medium/Low] Story Points: [Estimated Effort in Points] Notes:
-
-[Additional information or edge cases]
+**Definition of Done:**
+- [ ] All acceptance criteria are met.
+- [ ] Code is reviewed and approved.
+- [ ] Necessary tests are written and pass.
+- [ ] Documentation is updated, if applicable.
+- [ ] Feature is deployed to the [environment name].
