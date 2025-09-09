@@ -32,7 +32,7 @@ Tables:
 
 **Admin:**
 - Id - PRIMARY_KEY, AUTO_INCREMENT
-- Email - VARCHAR, UNIQUE, NOT NULL
+- Username - VARCHAR, UNIQUE, NOT NULL
 - Password - VARCHAR, NOT NULL
 
 ## MongoDB Collection Design
