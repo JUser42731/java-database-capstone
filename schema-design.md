@@ -10,6 +10,7 @@ Tables:
 - Id - INT, PRIMARY_KEY, AUTO_INCREMENT
 - Name - VARCHAR, NOT NULL
 - Email - VARCHAR, UNIQUE, NOT NULL
+- Password - VARCHAR, NOT NULL
 - Date of Birth - DATETIME
 - Phone - VARCHAR
 
@@ -17,6 +18,7 @@ Tables:
 - Id - INT, PRIMARY_KEY, AUTO_INCREMENT
 - Name - VARCHAR, NOT NULL
 - Email - VARCHAR, UNIQUE, NOT NULL
+- Password - VARCHAR, NOT NULL
 - Date of Birth - DATETIME
 - Phone - VARCHAR
 - Specialty - VARCHAR
@@ -31,6 +33,7 @@ Tables:
 **Admin:**
 - Id - PRIMARY_KEY, AUTO_INCREMENT
 - Email - VARCHAR, UNIQUE, NOT NULL
+- Password - VARCHAR, NOT NULL
 
 ## MongoDB Collection Design
 
