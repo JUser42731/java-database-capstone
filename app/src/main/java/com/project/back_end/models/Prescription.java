@@ -1,9 +1,9 @@
 package com.project.back_end.models;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Document(collection = "prescriptions")
 public class Prescription {
@@ -11,18 +11,18 @@ public class Prescription {
     @Id
     private String id;
 
-    @NotNull("patient name can't be null")
+    @NotNull(message = "patient name can't be null")
     @Size(min = 3, max = 100)
     private String patientName;
 
-    @NotNull("appointment id can't be null")
+    @NotNull(message = "appointment id can't be null")
     private Long appointmentId;
 
-    @NotNull("medication can't be null")
+    @NotNull(message = "medication can't be null")
     @Size(min = 3, max = 100)
     private String medication;
 
-    @NotNull("dosage can't be null")
+    @NotNull(message = "dosage can't be null")
     private String dosage;
 
     @Size(max = 200)

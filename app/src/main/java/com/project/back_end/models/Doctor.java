@@ -1,18 +1,18 @@
 package com.project.back_end.models;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Size;
-import javax.validation.constraints.Pattern;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.List;
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Doctor {
@@ -21,24 +21,24 @@ public class Doctor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull("name can't be null")
+    @NotNull(message = "name can't be null")
     @Size(min = 3, max = 100)
     private String name;
 
-    @NotNull("specialty can't be null")
+    @NotNull(message = "specialty can't be null")
     @Size(min = 3, max = 50)
     private String specialty;
 
-    @NotNull("email can't be null")
+    @NotNull(message = "email can't be null")
     @Email
     private String email;
 
-    @NotNull("password can't be null")
+    @NotNull(message = "password can't be null")
     @Size(min = 6)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
-    @NotNull("phone can't be null")
+    @NotNull(message = "phone can't be null")
     @Pattern(regexp = "\\d{10}", message = "Phone number must be 10 digits")
     private String phone;
 
